@@ -1,0 +1,37 @@
+<section class="section">
+    <h1 class="section-heading title white-text">Our products</h1>
+    <!--<button type="button" class="btn btn-info" (click)="test()">test</button>-->
+
+    <div class="row">
+
+        <div *ngFor="let movie of movies" style="margin: auto;">
+            <div class="col-lg-3 col-md-6 mb-r">
+                <div class="card" style="width: 300px; ">
+                    <div class="view overlay hm-white-slight">
+                        <img src="{{movie.img}}" width="300px" style="min-height: 216px" class="img-fluid"
+                             alt="">
+                        <a [routerLink]="['/detail', movie.id]">
+                            <div class="mask waves-effect waves-classic"></div>
+                        </a>
+                    </div>
+                    <div class="card-block">
+                        <h4 class="card-title">{{movie.name}}
+                            <span *ngIf="movie.id % 3 == 0" class="badge red ">New</span>
+                        </h4>
+                        <p class="card-text">
+                            <span *ngFor="let cat of movie.categories | slice:0:3">{{cat}} </span>
+                            <span>...</span>
+                        </p>
+                        <span class="red-text price">
+                            {{movie.currency}}{{movie.amount}}
+                            <!--<button class="btn btn-danger"><i class="material-icons">delete</i></button>-->
+                        </span>
+                        <a [routerLink]="['/detail', movie.id]" class="btn btn-primary right"><i class="material-icons">forward</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+

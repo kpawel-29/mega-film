@@ -1,0 +1,13 @@
+.price {
+    font-weight: 600;
+    position: absolute;
+    bottom: 34px;
+    left: 20px;
+    font-size: 18px;
+}
+
+.badge {
+    float: right;
+    /*font-size: small;*/
+    margin-top: -30px;
+}

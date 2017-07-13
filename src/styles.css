@@ -1,0 +1,38 @@
+body {
+    background: #f5f5f5;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 50px;
+    margin: auto;
+    padding: 0px;
+    font-family: cursive;
+}
+
+.favourite {
+    background: white;
+    box-shadow: 2px 2px 12px #888;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+}
+
+.row {
+    margin: auto;
+}
+
+.loading {
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.right {
+    float: right;
+}
