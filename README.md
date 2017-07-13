@@ -1,3 +1,10 @@
-npm install 
-ng serve
-ng build --prod
+```
+$ npm install 
+```
+
+```
+$ ng serve
+```
+```
+$ ng build --prod
+```
